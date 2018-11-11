@@ -1,0 +1,62 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+
+	// your code goes here
+
+	
+        int i,k,n[20],p;
+
+	cout<<"how many elements you want to store";
+
+	cin>>p;
+
+	cout<<"\nenter the elements";
+
+	for(int r=0;r<p;r++)
+
+	{
+
+	    cin>>n[r];
+
+	}
+
+	for(i=0;i<p;i++)
+
+	{
+
+	    for(k=0;k<p-1;k++)
+
+	    {
+
+	        if(n[k]>n[k+1])
+
+	        {
+
+	            swap(n[k],n[k+1]);
+
+	        }
+
+	    }
+
+	}
+
+	cout<<"\nelements after swaping=";
+
+	for(k=0;k<p;k++)
+
+	{
+
+	    cout<<n[k];
+
+	    cout<<endl;
+
+	}
+
+	return 0;
+
+}
